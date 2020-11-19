@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO PROFESSOR</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+
+        <a class="navbar-brand" href="#"> PETLOVERS </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target-="#collapseNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapseNavbar">
+            <ul class="nav">
+                <li class="nav-item"> <a class="nav-link disabled" href="#"> Adote um PET </a> </li>
+                
+                <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navardrop_cardapio" data-toggle="dropdown"> Serviços </a> 
+                     <div class="dropdown-menu bg-secondary">
+                         <a class="dropdown-item" href="#"> Banho e Tosa </a>
+                         <a class="dropdown-item" href="#"> Veterinário </a>
+                         <a class="dropdown-item" href="#"> Adestrador </a>
+                         <a class="dropdown-item" href="#"> Dogwalker </a>
+                         <a class="dropdown-item" href="#"> Petsitter </a>
+                     </div>
+                </li>
+
+                <li class="nav-item"> <a class="nav-link" href="#"> Lojas </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#"> Acompanhe seu Pedido </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#"> Contato </a> </li>
+
+                <form class="form-inline">
+                    <input type="text" class="form-control mr-sm-2" placeholder="buscar">
+                    <button type="submit" class="btn btn-success">Buscar</button>
+                </form>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="jumbotron jumbotron-fluid bg-light">
+            <div class="display-4">
+                Aula Bootstrap Intermediário
+            </div>
+            <div class="lead">
+                Página do Formulário 
+            </div>
+            <a class="btn btn-outline-warning" href="card.html"> Página de Cards </a>
+            <a class="btn btn-outline-warning" href="list.html"> Página das Listas </a>
+        </div>
+    </div>
+    
+    <div class="container my-5">
+
+        <form class="was-validated bg-light">
+
+            <div class="form-group>
+                <label for="nome"> Nome </label>
+                <input type="text" class="form-control" required>
+                <div class="valid-feedback">Preenchimento Válido</div>
+                <div class="invalid-feedback">Campo Obrigatório</div>
+            </div>
+
+            <div class="form-group row row-cols-1"> 
+                <div class="col">
+                    <label for="fem">Feminino</label>
+                    <input class="form-control" type="radio" name="gen" value="fem"> 
+                </div>
+                <div class="col">
+                    <label for="masc">Masculino</label>
+                    <input class="form-control" type="radio" name="gen" value="masc"> 
+                </div>
+            </div>
+
+            <div class="form-group row row-cols-1">
+                <div class="col">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" required>
+                    <div class="valid-feedback">Preenchimento Válido</div>
+                    <div class="invalid-feedback">Preencha com seu e-email</div>
+                </div>
+                <div class="col">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" required>
+                    <div class="valid-feedback">Preenchimento Válido</div>
+                    <div class="invalid-feedback">Insira a senha </div>
+                </div>
+            </div>
+
+            <div class="form-group row row-cols-1">
+                <div class="col-1">
+                    <label for="ddd">DDD</label>
+                    <input type="number" class="form-control" required><div class="valid-feedback">Preenchimento Válido</div>
+                    <div class="invalid-feedback">Campo Obrigatório</div>
+                </div>
+                <div class="col-5">
+                    <label for="tel">Telefone</label>
+                    <input type="number" class="form-control" required>
+                    <div class="valid-feedback">Preenchimento Válido</div>
+                    <div class="invalid-feedback">Campo Obrigatório</div>
+                </div>
+                <div class="col">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" required>
+                    <div class="valid-feedback">Preenchimento Válido</div>
+                    <div class="invalid-feedback">Campo Obrigatório</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="estado">Estado</label>
+                <select class="form-control">
+                    <option selected>Escolher</option>
+                    <option>Acre(AC)</option>
+                    <option>Alagoas(AL)</option>
+                    <option>Amapá(AP)</option>
+                    <option>Amazonas(AM)</option>
+                    <option>Bahia(BA)</option>
+                    <option>Ceará(CE)</option>
+                    <option>Distrito Federal(DF)</option>
+                    <option>Espírito Santo(ES)</option>
+                    <option>Goiás(GO)</option>
+                    <option>Maranhão(MA)</option>
+                    <option>Mato Grosso(MT)</option>
+                    <option>Mato Grosso do Sul(MS)</option>
+                    <option>Minas Gerais(MG)</option>
+                    <option>Pará(PA)</option>
+                    <option>Paraíba(PB)</option>
+                    <option>Paraná(PR)</option>
+                    <option>Pernambuco(PE)</option>
+                    <option>Piauí(PI)</option>
+                    <option>Rio de Janeiro(RJ)</option>
+                    <option>Rio Grande do Norte(RN)</option>
+                    <option>Rio Grande do Sul(RS)</option>
+                    <option>Rondônia(RO)</option>
+                    <option>Roraima(RR)</option>
+                    <option>Santa Catarina(SC)</option>
+                    <option>São Paulo(SP)</option>
+                    <option>Sergipe(SE)</option>
+                    <option>Tocantins(TO)</option>
+                </select>
+            </div>
+
+            <div class="form-group row row-cols-2">
+                <div class="col-10">
+                    <label for="end">Endereço</label>
+                    <input type="text" class="form-control" required>
+                    <div class="valid-feedback">Preenchimento Válido</div>
+                    <div class="invalid-feedback">Campo Obrigatório</div>
+                </div>
+                <div class="col">
+                    <label for="num">Nº</label>
+                    <input type="number" class="form-control" required>
+                    <div class="valid-feedback">Preenchimento Válido</div>
+                    <div class="invalid-feedback">Campo Obrigatório</div>
+                </div>
+            </div>
+
+            <div class="form-group row row-cols-3">
+                <div class="col">
+                    <label for="comp">Complemento</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" class="form-control" required>
+                    <div class="valid-feedback">Preenchimento Válido</div>
+                    <div class="invalid-feedback">Campo Obrigatório</div>
+                </div>
+                <div class="col">
+                    <label for="cep">CEP</label>
+                    <input type="number" class="form-control" required>
+                    <div class="valid-feedback">Preenchimento Válido</div>
+                    <div class="invalid-feedback">Campo Obrigatório</div>
+                </div>
+            </div>
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember" required> Aceita nossos termos e condições?
+                  <div class="valid-feedback">Válido</div>
+                  <div class="invalid-feedback">Por favor, aceite. </div>
+                </label>
+            </div>
+
+            <button class="btn btn-primary btn-lg" type="submit"> Enviar </button>
+            <button class="btn btn-outline-warning btn-lg float-right" type="reset"> Limpar </button>
+        
+        </form>
+    </div> 
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+</body>
+</html>
